@@ -5,11 +5,14 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import { useTheme } from './context/ThemeContext'
 import './App.css'
 
 function Layout() {
+  const { theme } = useTheme()
+
   return (
-    <div className="app-shell">
+    <div className={`app-shell theme-${theme}`}>
       <Header />
       <main className="page-content">
         <Outlet />
