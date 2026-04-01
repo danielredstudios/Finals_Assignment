@@ -151,28 +151,83 @@
   color: var(--accent-color);
 }
 
-.contact-placeholder {
+.contact-form {
   margin-top: 1rem;
   display: grid;
   gap: 1rem;
 }
 
-.contact-placeholder label {
+.contact-form label {
   display: block;
   margin-bottom: 0.4rem;
   color: var(--heading-color);
   font-weight: 600;
 }
 
-.contact-placeholder input,
-.contact-placeholder textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--border-color);
   border-radius: 0.7rem;
   background: var(--surface-bg);
-  color: var(--muted-text);
+  color: var(--text-color);
   padding: 0.75rem;
+}
+
+.submit-button {
+  justify-self: start;
+  border: 1px solid var(--accent-color);
+  background: var(--accent-soft);
+  color: var(--heading-color);
+  border-radius: 0.65rem;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+}
+
+.error-text {
+  margin-top: 0.4rem;
+  color: #ef4444;
+  font-size: 0.85rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.modal-card {
+  width: min(520px, 100%);
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content {
+  margin: 0.8rem 0;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--text-color);
+}
+
+.modal-content span {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+.modal-close {
+  border: 1px solid var(--accent-color);
+  background: var(--accent-soft);
+  color: var(--heading-color);
+  border-radius: 0.6rem;
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
 }
 
 .link-button {
