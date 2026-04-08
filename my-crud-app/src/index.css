@@ -1,0 +1,33 @@
+:root {
+  --bg-color: #f4f6fb;
+  --panel-bg: #ffffff;
+  --surface-bg: #f8f9ff;
+  --text-color: #1f2937;
+  --muted-text: #64748b;
+  --heading-color: #0f172a;
+  --border-color: #d8deea;
+  --accent-color: #2563eb;
+  --accent-soft: rgba(37, 99, 235, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #ffffff 0%, var(--bg-color) 55%);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
